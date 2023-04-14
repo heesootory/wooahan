@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:079418a3faf7f095fae680cfc02596a2bf13d390b97a20b8c462e030d6e4cf4f
-size 388
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https:/jitpack.io' }
+        jcenter()
+    }
+}
+rootProject.name = "SingleDiary"
+include ':app'
