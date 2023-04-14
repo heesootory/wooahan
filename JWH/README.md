@@ -1,13 +1,3 @@
-# README
-4 / 12 (수)
-주제를 정했어요4
-
-4 / 13 (목)
-백엔드의 할 일
-- 실시간 통신: 유저의 위치정보를 받아서 보물의 위치정보와 대조
-- DB
-    - redis : 로그인토큰
-    - mongo : 방 정보 임시 저장(보물 위치, 참여 유저)
-    - Postgre : 위치를 저장해서 point를 spring에 쓸 수 있음 → 유저정보까지
-- 스프링 CRUD : 방만들기, 문의
-- 로그인: 자체 이메일 로그인, 구글로그인 (카카오, 네이버 로그인)
+version https://git-lfs.github.com/spec/v1
+oid sha256:e066a47873d2ea1015e59de21a440310a823efddc9247d1c469363a081a8f7be
+size 1891
