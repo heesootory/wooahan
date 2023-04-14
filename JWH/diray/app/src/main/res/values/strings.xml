@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:321b59b0d29451a6fd70bfabdd95022f025123b44e35f2946e1fb4b62433cae1
-size 73
+<resources>
+    <string name="app_name">SingleDiary</string>
+</resources>

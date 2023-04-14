@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:69a2a04fca91be0420998d7f579d5d9731d99b2fe384b4e4f9746aafed78d2c6
-size 580
+package com.techtown.diary;
+
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import androidx.fragment.app.Fragment;
+
+public class Fragment2 extends Fragment {
+    
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle saveInstanceState) {
+        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment2, container, false);
+        
+        initUI(rootView);
+        
+        return rootView;
+    }
+
+    private void initUI(ViewGroup rootView) {
+    }
+}
