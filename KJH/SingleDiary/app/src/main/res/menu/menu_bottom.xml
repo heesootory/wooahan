@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5b38e63107d67df6fef4ebe652521affbbb5f5372db17238ddffa3a012c3ce4c
-size 680
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/tab1"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:icon="@drawable/list_48"
+        android:title="목록" />
+    <item
+        android:id="@+id/tab2"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/write_48"
+        android:title="작성" />
+    <item
+        android:id="@+id/tab3"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:icon="@drawable/graph_48"
+        android:title="통계" />
+
+</menu>

@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b2c85a461dd2b1526149b466c75a48e996a266066e1315501ced13fb24720eb1
-size 229
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+plugins {
+    id 'com.android.application' version '7.4.2' apply false
+    id 'com.android.library' version '7.4.2' apply false
+}

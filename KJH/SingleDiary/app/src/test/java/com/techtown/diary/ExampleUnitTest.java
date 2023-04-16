@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5ac28b87e4da2d1644ad12b9ab3aa232922164f98123a6d864f7646bc029064c
-size 379
+package com.techtown.diary;
+
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
+/**
+ * Example local unit test, which will execute on the development machine (host).
+ *
+ * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
+ */
+public class ExampleUnitTest {
+    @Test
+    public void addition_isCorrect() {
+        assertEquals(4, 2 + 2);
+    }
+}

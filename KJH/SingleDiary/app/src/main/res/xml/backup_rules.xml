@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9f7e4c84c8fd2c81478d15962383f47cc6ff55d62abcd40c8ffa6fc08a8c35b7
-size 478
+<?xml version="1.0" encoding="utf-8"?><!--
+   Sample backup rules file; uncomment and customize as necessary.
+   See https://developer.android.com/guide/topics/data/autobackup
+   for details.
+   Note: This file is ignored for devices older that API 31
+   See https://developer.android.com/about/versions/12/backup-restore
+-->
+<full-backup-content>
+    <!--
+   <include domain="sharedpref" path="."/>
+   <exclude domain="sharedpref" path="device.xml"/>
+-->
+</full-backup-content>
