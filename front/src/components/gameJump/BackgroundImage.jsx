@@ -1,33 +1,3 @@
-import { connect } from "react-redux";
-import PropTypes from "prop-types";
-import { useThree } from "@react-three/fiber";
-import { useEffect } from "react";
-import { TextureLoader, sRGBEncoding } from "three";
-
-const BackgroundImage = ({ imagePath }) => {
-  const { scene } = useThree();
-
-  useEffect(() => {
-    const loader = new TextureLoader();
-    loader.load(imagePath, (texture) => {
-      texture.encoding = sRGBEncoding;
-      scene.background = texture;
-    });
-
-    return () => {
-      scene.background = null;
-    };
-  }, [imagePath, scene]);
-
-  return null;
-};
-
-BackgroundImage.propTypes = {
-  imagePath: PropTypes.string.isRequired,
-};
-
-const mapStateToProps = (state) => ({});
-
-const mapDispatchToProps = {};
-
-export default connect(mapStateToProps, mapDispatchToProps)(BackgroundImage);
+version https://git-lfs.github.com/spec/v1
+oid sha256:43a8a1ef02f9437f617f99195cc8097165704b49ba7ab43b1ef11cb0eb12783d
+size 902
