@@ -1,24 +1,3 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Color } from "three";
-
-const WaterFloor = ({ bottom = 0, ...props }) => {
-  return (
-    <mesh {...props} position={[0, bottom - 95, 30]}>
-      <boxGeometry args={[1000, 10, -400, 10, 10]} />
-      <meshStandardMaterial
-        color={(() => {
-          const color = new Color("#00bfff");
-          return color.convertSRGBToLinear();
-        })()}
-        opacity={0.1}
-      />
-    </mesh>
-  );
-};
-
-WaterFloor.propTypes = {
-  bottom: PropTypes.number,
-};
-
-export default WaterFloor;
+version https://git-lfs.github.com/spec/v1
+oid sha256:566074fa1f153b387f86799dac8ae628d805190c9eee969df471a3e1d7c49af7
+size 560
