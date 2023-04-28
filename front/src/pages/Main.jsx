@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bb8a011ae01d63c2f8717a6902eef770f3df5e5f472f8dc5c10138f3d66ecf34
-size 360
+import PropTypes from 'prop-types'
+import React from 'react'
+import { connect } from 'react-redux'
+import { Link } from "react-router-dom";
+
+export const Main = (props) => {
+  return (
+    <div>
+      <h1>Main</h1>
+      <Link to={"jump"}>고 짬프</Link>
+      <Link to={"sleigh"}>고 썰매</Link>
+    </div>
+  );
+};
+
+Main.propTypes = {
+  // second: PropTypes.third
+};
+
+const mapStateToProps = (state) => ({})
+
+const mapDispatchToProps = {}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Main)
