@@ -1,19 +1,3 @@
-import PropTypes from 'prop-types'
-import React from 'react'
-import { connect } from 'react-redux'
-
-export const GameTrain = (props) => {
-  return (
-    <div>GameTrain</div>
-  )
-}
-
-GameTrain.propTypes = {
-  // second: PropTypes.third
-};
-
-const mapStateToProps = (state) => ({})
-
-const mapDispatchToProps = {}
-
-export default connect(mapStateToProps, mapDispatchToProps)(GameTrain)
+version https://git-lfs.github.com/spec/v1
+oid sha256:6ee48c86fe5372100d19a9498a04adf5896fd44be6abf0f1a3f98ca6b68b652e
+size 588
