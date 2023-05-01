@@ -1,28 +1,3 @@
-import PropTypes from 'prop-types'
-import React from 'react'
-import { connect } from 'react-redux'
-import Header from '../components/main/Header' 
-import Modal from '../components/main/modal/Modal'
-import { useSelector } from 'react-redux'
-
-export const Books = () => {
-  
-    const showModal = useSelector(state => state.modal.modalIsVisible)
-
-  return (
-    <div className="relative w-screen h-screen bg-deepPink">
-        <Header titleIsVisible={false} topLeftButton={"home"}/>
-        {showModal && <Modal />}
-    </div>
-  )
-}
-
-Books.propTypes = {
-  // second: PropTypes.third
-};
-
-const mapStateToProps = (state) => ({})
-
-const mapDispatchToProps = {}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Books)
+version https://git-lfs.github.com/spec/v1
+oid sha256:019a2f3e5f1e6365eccd48a1bfbc8bed1eded29e83b13a390487d197be0192c6
+size 791
