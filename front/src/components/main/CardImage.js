@@ -1,30 +1,3 @@
-import image_iceburg from "assets/images/background_iceberg.jpg"
-import image_dessert from "assets/images/background_desert.jpg"
-import image_forest from "assets/images/background_forest.jpg"
-import image_underwater from "assets/images/background_underwater.jpg"
-import { useDispatch } from "react-redux"
-import { backActions } from 'store/features/mainCard/backSlice' 
-
-
-const coverImages =[
-    image_iceburg, image_forest, image_underwater, image_dessert
-]
-
-const CardImage = (props) => {
-    
-    const dispatch = useDispatch();
-
-    // 리덕스의 백그라운드 변화 메서드 호출
-    const backChangeHandler = () => {
-        dispatch(backActions.changeBackGround(props.coverImage))
-    }
-    backChangeHandler();
-
-    return (
-        <div className="absolute pin-t pin-l w-full h-full">
-            {!(props.coverImage === props.id) && <img className="w-full h-full" src={coverImages[(props.id)]} />}
-        </div>
-    )
-}
-
-export default CardImage;
+version https://git-lfs.github.com/spec/v1
+oid sha256:c7a84376dd5e369ba2a0ae86fb47558d3ded16e935cbd10a089eb557f1914bd7
+size 966
