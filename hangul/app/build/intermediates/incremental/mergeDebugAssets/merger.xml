@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:07e822824a44ccffb640782d6890cf30d8a667633457befda08a55e9cb5b2808
-size 581
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\SSAFY\Desktop\hangul-app\hangul\app\src\main\assets"/><source path="C:\Users\SSAFY\Desktop\hangul-app\hangul\app\build\intermediates\shader_assets\debug\out"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\SSAFY\Desktop\hangul-app\hangul\app\src\debug\assets"/></dataSet></merger>
