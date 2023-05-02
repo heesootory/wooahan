@@ -1,17 +1,3 @@
-import PropTypes from "prop-types";
-import React from "react";
-import { connect } from "react-redux";
-
-export const QuizBox = (props) => {
-  return <div>QuizBox</div>;
-};
-
-QuizBox.propTypes = {
-  //   second: PropTypes.third
-};
-
-const mapStateToProps = (state) => ({});
-
-const mapDispatchToProps = {};
-
-export default connect(mapStateToProps, mapDispatchToProps)(QuizBox);
+version https://git-lfs.github.com/spec/v1
+oid sha256:5580ef7b83c611fd8ae884948d0db60002ae70243fe7dede948444a5bf9a6686
+size 1681
