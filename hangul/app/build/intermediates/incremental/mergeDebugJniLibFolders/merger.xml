@@ -1,2 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\SSAFY\Desktop\S08P31B206\hangul\app\src\main\jniLibs"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\SSAFY\Desktop\S08P31B206\hangul\app\src\debug\jniLibs"/></dataSet></merger>
+version https://git-lfs.github.com/spec/v1
+oid sha256:8255362c60c70a8e81f873b66aab45a780f5b8731009bc410dd2593d30ebc182
+size 508
