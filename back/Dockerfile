@@ -1,7 +1,3 @@
-FROM adoptopenjdk/openjdk11
-VOLUME /tmp
-ARG JAR_FILE=back-0.0.1-SNAPSHOT.jar
-COPY ${JAR_FILE} app.jar
-#EXPOSE 9090
-ENTRYPOINT ["java", "-jar", "/app.jar"]
-LABEL authors="smini"
+version https://git-lfs.github.com/spec/v1
+oid sha256:05aba57d9d9559692cacdfdd16972e6c9247da68a36a7c4a6bd5e88a9e7096cb
+size 189
