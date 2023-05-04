@@ -1,3 +1,48 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ad52c94b6242f856d81ffc8cc18c895089a6e71d5ef89d2ce0aa2239adf51df8
-size 966
+package com.wooahan.back.entity;
+
+import lombok.*;
+import org.hibernate.annotations.ColumnDefault;
+
+import javax.persistence.*;
+import java.util.List;
+
+@Entity
+@Getter
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+public class Member {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name ="member_id")
+    private Long id;
+
+    @Column(nullable = false)
+    private String name;
+
+    @Column(nullable = false)
+    private String email;
+
+    @Column(nullable = false)
+    private String provider;
+
+    @Column(nullable = false)
+    private boolean isGuest;
+
+    @ColumnDefault("0")
+    private int starCount;
+
+    @OneToMany(mappedBy = "member")
+    private List<Reward> rewards;
+
+    public Member update(String name, boolean isGuest) {
+        this.name = name;
+        this.isGuest = isGuest;
+        return this;
+    }
+
+    public int starUp(int starCount) {
+        this.starCount=starCount;
+        return this.starCount;
+    }
+}

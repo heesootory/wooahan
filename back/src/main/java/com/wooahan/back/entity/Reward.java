@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7dc2bee9b583bba65e431b7ce66bc6fcfc86ee91d46f39d4f0bd2e350ac3f572
-size 657
+package com.wooahan.back.entity;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+import javax.persistence.*;
+
+
+
+@Entity
+@Getter
+@NoArgsConstructor
+public class Reward {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name ="reward_id")
+    private Long id;
+
+    public Reward(Member member,Word word) {
+        this.member = member;
+        this.word=word;
+    }
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name="member_id")
+    private Member member;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name="word_id")
+    private Word word;
+
+
+}

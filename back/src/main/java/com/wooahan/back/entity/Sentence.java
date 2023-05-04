@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0c2ab24fef96b06de7437b668c40ae1efeaa14479149065e6b92000d1e853bc6
-size 623
+package com.wooahan.back.entity;
+
+import com.wooahan.back.dto.Difficulty;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+import javax.persistence.*;
+
+@Entity
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+public class Sentence {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name ="sentence_id")
+    private Long id;
+
+    @Enumerated(EnumType.ORDINAL)
+    private Difficulty difficulty;
+
+    @Column(nullable = false)
+    private String content;
+
+    @Column(nullable = false, name = "spacing_cnt")
+    private int spaceCnt;
+}

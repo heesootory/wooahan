@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a26957babf620d0c17b7bff43ac11b53a7dd86f167f6459e87b4b895dd64e84e
-size 574
+package com.wooahan.back.entity;
+
+import javax.persistence.*;
+import javax.persistence.criteria.CriteriaBuilder;
+
+@Entity
+public class Segment {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name ="segment_id")
+    private Long id;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name="sentence_id")
+    private Sentence sentence;
+
+    @Column(nullable = false)
+    private String content;
+
+    @Column(nullable = false, name = "word_order")
+    private Integer wordOrder;
+
+    @Column(nullable = false)
+    private String voiceUrl;
+}
+
