@@ -1,15 +1,3 @@
-import React from "react";
-import logo from "./logo.svg";
-import { Counter } from "./store/features/counter/Counter";
-import "./App.css";
-import { Outlet } from "react-router-dom";
-
-const App = () => {
-  return (
-    <div className="App">
-      <Outlet />
-    </div>
-  );
-};
-
-export default App;
+version https://git-lfs.github.com/spec/v1
+oid sha256:7ceac9c711d432b7b04d90e6eeb2afece0f9ce23b294e4430231ee9d0251e5c4
+size 393
