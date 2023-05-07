@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bfc24d6a6b6f8f9b9cc6be8cb49f5d0cd51d5707b2689a975b59502b2771830b
-size 472
+import PropTypes from "prop-types";
+import { Html } from "@react-three/drei";
+
+const TextObject = ({ text, position = [0, 0, 0], ...props }) => {
+
+
+  return (
+    <mesh position={position}>
+      <Html>
+        <div className={`whitespace-nowrap mt-8 text-4xl font-MaplestoryBold`}>
+          {text}
+        </div>
+      </Html>
+    </mesh>
+  );
+};
+
+TextObject.propTypes = {
+  text: PropTypes.string.isRequired,
+  position: PropTypes.array,
+};
+
+export default TextObject;
