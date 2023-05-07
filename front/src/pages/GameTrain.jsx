@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3db2d8dcc262b8de08ec88f697339c7c84e7a5a309123e7e4380bd6adac18922
-size 736
+import PropTypes from "prop-types";
+import React from "react";
+import { connect } from "react-redux";
+import TrainStart from "components/gameTrain/TrainStart";
+import ReactAudioPlayer from "react-audio-player";
+
+import bgm from "assets/sounds/trainbgm.mp3";
+
+export const GameTrain = (props) => {
+  return (
+    <div className="fixed bg-[url('assets/images/tmp/background-desert.jpg')] bg-cover bg-no-repeat h-screen w-screen">
+      <TrainStart />
+      <ReactAudioPlayer src={bgm} autoPlay={true} volume={1} />
+    </div>
+  );
+};
+
+GameTrain.propTypes = {
+  // second: PropTypes.third
+};
+
+const mapStateToProps = (state) => ({});
+
+const mapDispatchToProps = {};
+
+export default connect(mapStateToProps, mapDispatchToProps)(GameTrain);
