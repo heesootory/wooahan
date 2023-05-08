@@ -1,29 +1,3 @@
-package com.wooahan.back.entity;
-
-import com.wooahan.back.dto.Difficulty;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-
-import javax.persistence.*;
-
-@Entity
-@Getter
-@NoArgsConstructor
-@AllArgsConstructor
-public class Sentence {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name ="sentence_id")
-    private Long id;
-
-    @Enumerated(EnumType.ORDINAL)
-    private Difficulty difficulty;
-
-    @Column(nullable = false)
-    private String content;
-
-    @Column(nullable = false, name = "spacing_cnt")
-    private int spaceCnt;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ff8470d60bcabab27bf8fd44160465bcf013b85913dad84f85d27eef2011eae7
+size 654
