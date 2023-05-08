@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:068273f5acb26b9b784459a75b144c22a8d4d92619a9d9a3159cfebd64c3d2c2
-size 761
+{
+    "logs": [
+        {
+            "outputFile": "com.penguin.hangul.app-mergeDebugResources-27:/values-v22/values-v22.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\SSAFY\\.gradle\\caches\\transforms-3\\8d9343f569df63b726615d18b45679d4\\transformed\\appcompat-1.6.1\\res\\values-v22\\values-v22.xml",
+                    "from": {
+                        "startLines": "2,3,4,9",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,130,217,487",
+                        "endLines": "2,3,8,13",
+                        "endColumns": "74,86,12,12",
+                        "endOffsets": "125,212,482,764"
+                    }
+                }
+            ]
+        }
+    ]
+}

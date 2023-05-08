@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:429bd67b2ea46ec1dfa64a8983f0c6e208cd8861af8f15fbf20d5629b6e58769
-size 693
+{
+    "logs": [
+        {
+            "outputFile": "com.penguin.hangul.app-mergeDebugResources-27:/values-ldltr-v21/values-ldltr-v21.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\SSAFY\\.gradle\\caches\\transforms-3\\8d9343f569df63b726615d18b45679d4\\transformed\\appcompat-1.6.1\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "112",
+                        "endOffsets": "163"
+                    }
+                }
+            ]
+        }
+    ]
+}
