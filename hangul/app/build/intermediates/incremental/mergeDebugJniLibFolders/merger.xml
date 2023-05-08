@@ -1,2 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\jimmy\projects\android-repos\S08P31B206\hangul\app\src\main\jniLibs"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\jimmy\projects\android-repos\S08P31B206\hangul\app\src\debug\jniLibs"/></dataSet></merger>
+version https://git-lfs.github.com/spec/v1
+oid sha256:34ff792a5c952c84717cf6aa81fa0e23d54d5fbecf4651e619bc6f83664bdf22
+size 482
