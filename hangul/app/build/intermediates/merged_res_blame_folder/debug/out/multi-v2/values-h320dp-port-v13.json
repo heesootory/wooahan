@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3f2c2d204d1ff0bd744867fa734429b16fa5beeee11cf8a9ca8e19e5f5c56f18
-size 715
+{
+    "logs": [
+        {
+            "outputFile": "com.penguin.hangul.app-mergeDebugResources-27:/values-h320dp-port-v13/values-h320dp-port-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\SSAFY\\.gradle\\caches\\transforms-3\\9ae6143ba7d88d1cbf68916d08d2afcb\\transformed\\material-1.8.0\\res\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "75",
+                        "endOffsets": "126"
+                    }
+                }
+            ]
+        }
+    ]
+}
