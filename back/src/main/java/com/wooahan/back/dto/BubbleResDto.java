@@ -1,16 +1,3 @@
-package com.wooahan.back.dto;
-
-import com.fasterxml.jackson.annotation.JsonAutoDetect;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.Builder;
-import lombok.Getter;
-
-import java.util.List;
-
-@Builder
-@Getter
-public class BubbleResDto {
-    private String answer;
-    private String answerImg;
-    private List<SimpleWordInfo> cards;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:bc4ed25935b00c049704bfbba4cb7ee0871817199f8b192e7190cce3cca38461
+size 395
