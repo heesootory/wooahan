@@ -140,10 +140,13 @@ class DeviceInformation(val context: Context){
 // 변수 관련 클래스를 만들고 인터페이스를 통해(getValue 등) 전달..
 class MyData {
     var value : String = "My Data 입니당"
+
+    fun getValue(){}
+
 }
 
 // 변수 관련 클래스를 만들고 인터페이스를 통해(getValue 등) 전달..
-class MyJavaScriptInterFace(private  val myData: MyData){
+class MyJavaScriptInterFace(private val myData: MyData){
     @JavascriptInterface
     fun getValue():String{
         return myData.value
@@ -152,7 +155,7 @@ class MyJavaScriptInterFace(private  val myData: MyData){
 
 
 // evaluateJavascript와 dispatchEvent를 통해 함수를 실행시킬 수 있음
-class JavascriptCallbackClient(private val mContext: Activity, private var webView: WebView) {
+class JavascriptCallbackClient(private val mContext: Activity, private val webView: WebView) {
     val myName = "최희수"
     private fun publishEvent(functionName: String, data: String): String {
         val buffer = StringBuffer()
