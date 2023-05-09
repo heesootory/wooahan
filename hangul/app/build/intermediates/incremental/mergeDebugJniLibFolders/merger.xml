@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:17dbc139996da2edf8826216c655a055431cab531c8cf3e160af8a9fe050be77
-size 500
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\SSAFY\Desktop\hangul-app\S08P31B206\hangul\app\src\main\jniLibs"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\SSAFY\Desktop\hangul-app\S08P31B206\hangul\app\src\debug\jniLibs"/></dataSet></merger>
