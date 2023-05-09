@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:61bebed9d1c847b5f52c31140604eab793e453f8b221d4201524089de274955e
-size 372
+import { createSlice } from "@reduxjs/toolkit"
+
+const initialState = {
+    page : 0,
+}
+
+export const backSlice = createSlice({
+    name : "mainBackGround",
+    initialState,
+    reducers : {
+        changeBackGround(state, action){
+            state.page = action.payload
+        }
+    }
+})
+
+export const backActions = backSlice.actions;
+
+export default backSlice.reducer;
