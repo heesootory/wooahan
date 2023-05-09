@@ -1,21 +1,3 @@
-import React from "react";
-import PropTypes from "prop-types";
-import TmpLoadingImage from "assets/images/background/TmpLoading.png";
-
-const LoadingComponent = (props) => {
-  return (
-    <div
-      className={`flex justify-center item-center absolute h-screen w-screen`}
-    >
-      <img
-        className={`flex justify-center item-center absolute h-screen w-screen`}
-        src={TmpLoadingImage}
-        alt={`로딩 페이지입니다`}
-      />
-    </div>
-  );
-};
-
-LoadingComponent.propTypes = {};
-
-export default LoadingComponent;
+version https://git-lfs.github.com/spec/v1
+oid sha256:4136875799fe221753fa3adff40350423be4d1e590762487feb2d21516173d79
+size 2691
