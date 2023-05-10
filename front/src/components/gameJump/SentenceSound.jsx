@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6afd433d1f462c00417f76f8a5b17f79e85f4bd6907812c04703ec059c39b2a4
-size 775
+import { useLoader, useThree } from "@react-three/fiber";
+import { forwardRef, useEffect, useState } from "react";
+import { AudioListener, AudioLoader } from "three";
+
+const SentenceSound = forwardRef(({ fileName }, sound) => {
+  // const sound = useRef();
+  const { camera } = useThree();
+  const [listener] = useState(() => new AudioListener());
+  // const buffer = useLoader(AudioLoader, fileName);
+
+  useEffect(() => {
+    // sound.current.setBuffer(buffer);
+    sound.current.setRefDistance(1);
+    sound.current.setVolume(170);
+
+    // sound.current.play();
+
+    camera.add(listener);
+    return () => camera.remove(listener);
+  }, [camera, listener, sound]);
+
+  return <positionalAudio loop={false} ref={sound} args={[listener]} />;
+});
+
+export default SentenceSound;
