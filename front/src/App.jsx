@@ -1,15 +1,3 @@
-import LoadingComponent from "components/common/LoadingComponent";
-import React from "react";
-import { Outlet } from "react-router-dom";
-
-const App = () => {
-  return (
-    <React.Suspense fallback={<LoadingComponent />}>
-      <div className="mx-auto h-screen w-screen flex text-center">
-        <Outlet />
-      </div>
-    </React.Suspense>
-  );
-};
-
-export default App;
+version https://git-lfs.github.com/spec/v1
+oid sha256:b7a96eb81ea89a5826de32762727035500e51af8872bd6c40f642ce4e1a80422
+size 566
