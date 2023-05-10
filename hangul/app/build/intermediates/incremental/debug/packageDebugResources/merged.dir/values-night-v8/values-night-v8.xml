@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8b6ad7cc06ef17cab62f7ea7e85a2683d796a9508b9983d6ac0b35827c27dcc7
-size 689
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Hangul" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>
