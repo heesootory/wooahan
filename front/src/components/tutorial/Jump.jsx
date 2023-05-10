@@ -1,17 +1,3 @@
-import PropTypes from "prop-types";
-import React from "react";
-import { connect } from "react-redux";
-
-export const Jump = (props) => {
-  return <div>Jump</div>;
-};
-
-Jump.propTypes = {
-  // second: PropTypes.third,
-};
-
-const mapStateToProps = (state) => ({});
-
-const mapDispatchToProps = {};
-
-export default connect(mapStateToProps, mapDispatchToProps)(Jump);
+version https://git-lfs.github.com/spec/v1
+oid sha256:8b58840cba49c66cc2de73d97aee40a104ee1136faa32010796e5a02c5631932
+size 360
