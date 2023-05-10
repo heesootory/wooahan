@@ -1,3 +1,57 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:75df2a03a61af35445493dbf19641b801f970bd62a54fc3a9765bea7bb48175b
-size 1070
+import { createBrowserRouter } from "react-router-dom";
+import App from "App";
+import Main from "pages/Main";
+import GameSleigh from "pages/GameSleigh";
+import GameBubble from "pages/GameBubble";
+import GameTrain from "pages/GameTrain";
+import Books from "pages/Books";
+import Tutirial from "pages/Tutirial";
+import GameEnding from "pages/GameEnding";
+
+const route = createBrowserRouter([
+  {
+    path: `/`,
+    element: <App />,
+    children: [
+      {
+        path: `/`,
+        element: <Main />,
+      },
+      {
+        path: `books`,
+        element: <Books />,
+      },
+      {
+        path: `jump`,
+        async lazy() {
+          let { GameJump } = await import(`pages/GameJump`);
+          return {
+            Component: GameJump,
+          };
+        },
+      },
+      {
+        path: `sleigh`,
+        element: <GameSleigh />,
+      },
+      {
+        path: `train`,
+        element: <GameTrain />,
+      },
+      {
+        path: `bubble`,
+        element: <GameBubble />,
+      },
+      {
+        path: `tutorial`,
+        element: <Tutirial />,
+      },
+      {
+        path: `ending`,
+        element: <GameEnding />,
+      },
+    ],
+  },
+]);
+
+export default route;
