@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:afb72c64697247439049b74894e29cb74579b3e0551574285006d951087c9c8c
-size 326
+import SelectLevel from './SelectLevel'
+
+const Level = () => {
+
+    return (
+        <div className="h-[30%]">
+            <div className="font-['MaplestoryOTFBold'] text-xl mt-[2%]">
+                난이도를 선택해 주세요.
+            </div>
+            <SelectLevel />
+        </div>
+    )
+}
+
+export default Level;
