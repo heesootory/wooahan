@@ -1,23 +1,3 @@
-import { forwardRef, useEffect, useRef, useState } from "react";
-import { useLoader, useThree } from "@react-three/fiber";
-import { AudioListener, AudioLoader } from "three";
-
-const JumpSound = forwardRef(({ url }, sound) => {
-  // const sound = useRef();
-  const { camera } = useThree();
-  const [listener] = useState(() => new AudioListener());
-  const buffer = useLoader(AudioLoader, url);
-  useEffect(() => {
-    sound.current.setBuffer(buffer);
-    sound.current.setRefDistance(1);
-    sound.current.setVolume(10);
-
-    // sound.current.play();
-    console.log(sound.current);
-    camera.add(listener);
-    return () => camera.remove(listener);
-  }, []);
-  return <positionalAudio loop={false} ref={sound} args={[listener]} />;
-});
-
-export default JumpSound;
+version https://git-lfs.github.com/spec/v1
+oid sha256:f26e245c54db1d9d8f17f69fedc961c654ab319954b002588615172207396836
+size 767
