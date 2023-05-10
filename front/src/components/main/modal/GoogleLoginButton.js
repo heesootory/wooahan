@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0e632adf9ff046502ad0a132e5dbdac7131a4ad13c75daeb4d8b0fe2aa15f577
-size 927
+
+import {GoogleLogin} from "@react-oauth/google";
+import {GoogleOAuthProvider} from "@react-oauth/google";
+
+
+const url = "https://accounts.google.com/o/oauth2/auth?client_id=658207955186-n84qpvfhtdi82n6mfvbmh6v99aevulv7.apps.googleusercontent.com&redirect_uri=http://localhost:9090/login/oauth2/code/google&response_type=code&scope=https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile"
+
+const GoogleLoginButton = () => {
+    const clientId = 'clientID'
+    return (
+        <>
+            <GoogleOAuthProvider clientId={clientId}>
+                <GoogleLogin
+                    onSuccess={(res) => {
+                        console.log(res);
+                    }}
+                    onFailure={(err) => {
+                        console.log(err);
+                    }}
+                />
+            </GoogleOAuthProvider>
+        </>
+    );
+};
+
+export default GoogleLoginButton

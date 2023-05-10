@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9931736e4879289c0da46e0553307ee056b368eaec5fa750705ef8d0dc8b5c30
-size 585
+import Rewards from './header/Rewards';
+import Title from './header/Title';
+import Setting from './header/Setting';
+import {Link} from 'react-router-dom'
+import Home from '../main/books/Home'
+
+
+const Header = (props) => {
+    
+    return(
+        <div className="z-20 absolute px-[4%] mt-[1%] w-screen h-[15%] bg-transparent flex justify-between items-center">
+            {(props.topLeftButton === "books") ? <Rewards><Link to="/books"></Link></Rewards> : <Home />}
+            {props.titleIsVisible && <Title />}
+            <Setting />
+        </div>
+    )
+}
+
+export default Header;
