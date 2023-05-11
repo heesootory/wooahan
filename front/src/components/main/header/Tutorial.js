@@ -1,21 +1,3 @@
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faQuestion } from '@fortawesome/free-solid-svg-icons';
-import { useNavigate } from 'react-router-dom';
-
-library.add(faQuestion);
-
-const Tutorial = () => {
-
-    const nav = useNavigate();
-
-    return (
-        <div onClick={() => {nav(`/tutorial`)}} className="pr-4 w-[50%] h-full flex justify-end items-center">
-            <button className="bg-palePupple rounded-xl w-full h-4/5 flex items-center justify-center">
-                <FontAwesomeIcon icon={faQuestion} size='2xl'/>
-            </button>
-        </div>
-    )
-}
-
-export default Tutorial;
+version https://git-lfs.github.com/spec/v1
+oid sha256:569f3da938f3a4349343691cf81ddba333176552ba4e5d28c74fbba8bff053a4
+size 686
