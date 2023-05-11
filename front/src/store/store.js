@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:38bfe99e55b9da761b22aa99539f3b7320a56c421d9714cdefac7b711f7205f4
-size 866
+import { configureStore } from "@reduxjs/toolkit";
+import counterReducer from "./features/counter/counterSlice";
+import backSlice from "./features/mainCard/backSlice";
+import modalSlice from "./features/mainCard/modalSlice";
+import levelSlice from "./features/mainCard/levelSlice";
+import gameStatusSlice from "./features/gameStatus/gameStatusSlice";
+import bookSlice from "./features/mainCard/bookSlice";
+import sleighReducer from "./features/sliegh/sleighSlice";
+import jumpSlice from "./features/jump/jumpSlice";
+import loginSlice from './features/login/loginSlice';
+import cardSlice from './features/mainCard/cardSlice';
+
+export const store = configureStore({
+  reducer: {
+    counter: counterReducer,
+    backGround: backSlice,
+    modal: modalSlice,
+    level: levelSlice,
+    gameStatus: gameStatusSlice,
+    bookText: bookSlice,
+    sleigh: sleighReducer,
+    jump: jumpSlice,
+    loginInfo: loginSlice,
+    prevPage: cardSlice,
+  },
+});

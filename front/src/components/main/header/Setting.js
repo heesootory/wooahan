@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:94263b2916e8bb02b27cd0e0e2fd63ba21a3f67c7e81f4208e4ba3b7aa48c142
-size 818
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGear } from '@fortawesome/free-solid-svg-icons';
+import { useDispatch } from "react-redux"
+import { modalActions } from 'store/features/mainCard/modalSlice'
+
+library.add(faGear);
+
+const Setting = () => {
+
+    const dispatch = useDispatch();
+
+    const modalOpenHandler = () => {
+        dispatch(modalActions.openModal())
+    }
+
+    return (
+        <div className="pr-4 w-[50%] h-full flex justify-end items-center">
+            <button onClick={modalOpenHandler} className="bg-palePupple rounded-xl w-full h-4/5 flex items-center justify-center">
+                <FontAwesomeIcon icon={faGear} spin size='2xl'/>
+            </button>
+        </div>
+    )
+}
+
+export default Setting;
