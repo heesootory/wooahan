@@ -1,31 +1,3 @@
-import axiosInstance from "util/Axios";
-
-const gameURL = "game";
-
-export const game = {
-  get: {
-    bubble: async (difficulty) => {
-      const response = await axiosInstance.get(
-        `${gameURL}/bubble/${difficulty}`
-      );
-      return response;
-    },
-    jump: async (difficulty) => {
-      const response = await axiosInstance.get(`${gameURL}/jump/${difficulty}`);
-      return response;
-    },
-    run: async (difficulty) => {
-      const response = await axiosInstance.get(`${gameURL}/run/${difficulty}`);
-      return response;
-    },
-    train: async (difficulty) => {
-      const response = await axiosInstance.get(
-        `${gameURL}/train/${difficulty}`
-      );
-      return response;
-    },
-  },
-  post: {},
-  put: {},
-  delete: {},
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:deb2618e552e3859e5cd0d3dd0db1851a2da82a432224efbb0df4e00215ad1d3
+size 758
