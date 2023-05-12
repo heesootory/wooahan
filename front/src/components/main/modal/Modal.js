@@ -1,3 +1,45 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a0860d4a1e0511b00568eeb95e8c66f277f6bcdd586d8406368abe6d0d3147b8
-size 1040
+import { Fragment } from "react"
+import { useDispatch } from "react-redux"
+import { modalActions } from 'store/features/mainCard/modalSlice'
+
+import ModalHeader from "./ModalHeader"
+import Level from "./Level"
+import Login from "./Login"
+
+
+
+const Overlay = () => {
+
+    const dispatch = useDispatch();
+
+    const modalCloseHandler = () => {
+        dispatch(modalActions.closeModal())
+    }
+
+    return (
+        <div onClick={modalCloseHandler} className="absolute w-[200%] h-screen z-40 bg-tranparent">
+        </div>
+    )
+}
+
+const ModalOverlay = (props) => {
+    return (
+        <div className={`flex flex-col justify-start ${(props.config === "setting") ? `absolute` : `sticky`} top-[15%] left-[15%] z-40 bg-lightGray w-[70%] h-[72%] px-4 rounded-xl`}>
+            <ModalHeader />
+            <Level />
+            <Login />
+        </div>
+    )
+}
+
+const Modal = (props) => {
+
+    return (
+        <Fragment >
+            <Overlay />
+            <ModalOverlay config={props.config}/>
+        </Fragment>
+    )
+}
+
+export default Modal;

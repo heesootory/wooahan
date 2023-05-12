@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:36f3dcfd61f402c0693541e98756b32b43bfd180cab5c659b2cefad53164db3e
-size 659
+import React from "react";
+import { connect } from "react-redux";
+import TrainStart from "components/gameTrain/TrainStart";
+
+import bgm from "assets/sounds/trainbgm.mp3";
+import useSound from "util/hooks/useSound";
+
+export const GameTrain = (props) => {
+  
+  useSound(bgm, 1, 2000);
+
+  return (
+    <div className="fixed bg-[url('assets/images/tmp/background-desert.jpg')] bg-cover bg-no-repeat h-screen w-screen">
+      <TrainStart />
+    </div>
+  );
+};
+
+GameTrain.propTypes = {
+  // second: PropTypes.third
+};
+
+const mapStateToProps = (state) => ({});
+
+const mapDispatchToProps = {};
+
+export default connect(mapStateToProps, mapDispatchToProps)(GameTrain);
