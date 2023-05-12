@@ -1,17 +1,3 @@
-import PropTypes from "prop-types";
-import React from "react";
-import { connect } from "react-redux";
-
-export const Sleigh = (props) => {
-  return <div>Sleigh</div>;
-};
-
-Sleigh.propTypes = {
-  // second: PropTypes.third,
-};
-
-const mapStateToProps = (state) => ({});
-
-const mapDispatchToProps = {};
-
-export default connect(mapStateToProps, mapDispatchToProps)(Sleigh);
+version https://git-lfs.github.com/spec/v1
+oid sha256:fd270a347317916afedb3065ab5294b2f853ac2daa88848632821ea443c204da
+size 368
