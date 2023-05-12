@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:436ad4fbb79c7b1e00eca378eab29658064a41fc5931e690de8a3381cb2d7bda
-size 173
+FROM node:18.14.0
+
+WORKDIR /app
+
+COPY package.json /app
+
+RUN npm install
+
+COPY . /app
+
+RUN npm run build
+RUN npm install -g serve
+
+EXPOSE 3000
+
+CMD ["serve", "-s", "build"]
