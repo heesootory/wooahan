@@ -1,14 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="CompilerConfiguration">
-    <annotationProcessing>
-      <profile name="Gradle Imported" enabled="true">
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.26/8f8cf0372abf564913e9796623aac4c8ea44025a/lombok-1.18.26.jar" />
-        </processorPath>
-        <module name="back.main" />
-      </profile>
-    </annotationProcessing>
-  </component>
-</project>
+version https://git-lfs.github.com/spec/v1
+oid sha256:715cf3808f2715293952ef355c30308afbf94972593f27edd8ceb2a823e2b794
+size 593

@@ -1,16 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="GradleSettings">
-    <option name="linkedExternalProjectsSettings">
-      <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/back" />
-        <option name="gradleJvm" value="azul-11" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/back" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-    </option>
-  </component>
-</project>
+version https://git-lfs.github.com/spec/v1
+oid sha256:ce328caca673a32e58d3d4fc75301470d401e9adf0ffd921ba4f5004efe2e5ab
+size 574
