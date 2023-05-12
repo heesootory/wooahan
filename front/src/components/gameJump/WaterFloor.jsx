@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cdf55603fe2921d46b6f5d52ebf9486f8ca28cc0ce31ea5b011c77a6a23d8032
-size 580
+import React from "react";
+import PropTypes from "prop-types";
+import { Color } from "three";
+
+const WaterFloor = ({ bottom = 0, ...props }) => {
+  return (
+    <mesh {...props} position={[0, bottom - 105, 30]} name={`WaterFloor`}>
+      <boxGeometry args={[2000, 10, -400, 10, 10]} />
+      <meshStandardMaterial
+        color={(() => {
+          const color = new Color("#00bfff");
+          return color.convertSRGBToLinear();
+        })()}
+        opacity={0.1}
+      />
+    </mesh>
+  );
+};
+
+WaterFloor.propTypes = {
+  bottom: PropTypes.number,
+};
+
+export default WaterFloor;
