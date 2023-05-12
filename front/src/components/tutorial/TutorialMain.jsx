@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:04655d5e22f9f02a4981cbdaa63fda3a321a33c21cf075592e748da4c918e37d
-size 394
+import PropTypes from "prop-types";
+import React from "react";
+import { connect } from "react-redux";
+
+export const TutorialMain = (props) => {
+  return <div>TutorialMain</div>;
+};
+
+TutorialMain.propTypes = {
+  //   second: PropTypes.third,
+};
+
+const mapStateToProps = (state) => ({});
+
+const mapDispatchToProps = {};
+
+export default connect(mapStateToProps, mapDispatchToProps)(TutorialMain);
