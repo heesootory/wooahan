@@ -1,17 +1,3 @@
-import LoginButton from "./LoginButton"
-import GoogleLoginButton from "./GoogleLoginButton";
-
-const Login = () => {
-
-    return (
-        <div className="h-[45%]">
-            <div className="font-['MaplestoryOTFBold'] text-2xl mt-[4%] mb-[1%]">
-                구글 아이디로 로그인 해주세요
-            </div>
-            <LoginButton />
-            {/* <GoogleLoginButton /> */}
-        </div>
-    )
-}
-
-export default Login;
+version https://git-lfs.github.com/spec/v1
+oid sha256:598bd9ccb0c1aa4371214c7814c9ca83530441cb5c171c48277a4c71b3cc38f4
+size 439

@@ -1,27 +1,3 @@
-import image_iceburg from "assets/images/background_iceberg.jpg"
-import image_dessert from "assets/images/background_desert.jpg"
-import image_forest from "assets/images/background_forest.jpg"
-import image_underwater from "assets/images/background_underwater.jpg"
-
-
-const coverImages = [
-    image_iceburg, image_forest, image_underwater, image_dessert, image_iceburg, image_forest, image_underwater, image_dessert
-]
-
-const CardImage = (props) => {
-
-    return (
-      <div className="absolute w-full h-full">
-        {!(props.coverImage === props.id) && (
-          <img
-            className="w-full h-full"
-            src={coverImages[props.id]}
-            alt={"#"}
-            loading="lazy"
-          />
-        )}
-      </div>
-    );
-}
-
-export default CardImage;
+version https://git-lfs.github.com/spec/v1
+oid sha256:80c96fa3656cb53d86835797f43fdaa1dfb959f330541ce2c724ac4425fafb52
+size 770

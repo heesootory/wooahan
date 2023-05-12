@@ -1,29 +1,3 @@
-import React from "react";
-import { createRoot } from "react-dom/client";
-import { Provider } from "react-redux";
-import { store } from "./store/store";
-import reportWebVitals from "./reportWebVitals";
-import "./index.css";
-import { RouterProvider } from "react-router-dom";
-import route from "./router/Router";
-import ImagePreloadProvider from "util/context/ImagePreloadProvider";
-import { images } from "assets/images";
-
-const container = document.getElementById("root");
-const root = createRoot(container);
-window.doJump = () => {
-  console.log(`not claim function`);
-};
-
-root.render(
-  <Provider store={store}>
-    <ImagePreloadProvider imageUrls={images}>
-      <RouterProvider router={route} />
-    </ImagePreloadProvider>
-  </Provider>
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+version https://git-lfs.github.com/spec/v1
+oid sha256:eb1ec0b54e0c2bce3de4c19fb9dd48cd7148391f1a570b0ece7b3df0fa30a153
+size 978
