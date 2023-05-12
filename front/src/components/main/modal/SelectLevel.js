@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a3cebf3c300bdfb088e6e063975581998c01300430e3e10a00018ce398c2a281
-size 1070
+import { useDispatch } from "react-redux"
+import { levelActions } from 'store/features/mainCard/levelSlice' 
+import { useSelector } from "react-redux"
+
+const levels =['하', '중', '상']
+
+const SelectLevel = () => {
+
+    const dispatch = useDispatch();
+
+    const selectLevelHandler = (e) => {
+        dispatch(levelActions.selectLevel(e.currentTarget.id))
+    }
+
+    const selectedLevel = useSelector(state => state.level.level)
+
+    return (
+        <div className="flex justify-around items-center w-full h-[60%] pt-[1%]">
+            {levels.map((level, index) => {
+                return (
+                    <div onClick={selectLevelHandler} id={index} key={index} className={`flex justify-around items-center w-[8%] h-full ${(+selectedLevel === +index) ? `border border-sharkGray`: ``} rounded-lg`}>
+                        <div className="font-['MaplestoryOTFBold'] text-2xl">
+                            {level}
+                        </div>
+                    </div>
+                )    
+            })}
+        </div>
+    )
+}
+
+export default SelectLevel;
