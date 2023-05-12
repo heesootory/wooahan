@@ -1,13 +1,3 @@
-import { useGLTF } from "@react-three/drei";
-import { useGraph } from "@react-three/fiber";
-import { useMemo } from "react";
-import * as SkeletonUtils from "three/examples/jsm/utils/SkeletonUtils";
-
-export const useClonedModel = (url) => {
-  const { scene, materials, animations } = useGLTF(url);
-  const clonedScene = useMemo(() => SkeletonUtils.clone(scene), [scene]);
-  // console.log(clonedScene);
-  const { nodes } = useGraph(clonedScene);
-
-  return { scene: clonedScene, materials, animations, nodes };
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:45fa957d707ff581c3a1b58e596a8ab0b7357ab1f98943b7499eb9f5f3a99e82
+size 481
