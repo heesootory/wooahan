@@ -1,20 +1,3 @@
-{
-  "version": 3,
-  "artifactType": {
-    "type": "MERGED_MANIFESTS",
-    "kind": "Directory"
-  },
-  "applicationId": "com.penguin.hangul",
-  "variantName": "debug",
-  "elements": [
-    {
-      "type": "SINGLE",
-      "filters": [],
-      "attributes": [],
-      "versionCode": 1,
-      "versionName": "1.0",
-      "outputFile": "AndroidManifest.xml"
-    }
-  ],
-  "elementType": "File"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9f8cde49e44be7d26e3a1eaa333ea3cf98ad4b6fad5fa86fe6cc2a22981dbe05
+size 387
