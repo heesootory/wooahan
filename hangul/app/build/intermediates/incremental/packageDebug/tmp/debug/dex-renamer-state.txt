@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b11b74e07d04925d54269fd864d5a16810f3ca0eee61559b26d7d8d2cc39cda3
-size 593
+#Tue May 16 02:28:11 KST 2023
+base.2=C\:\\Users\\SSAFY\\Desktop\\hangul-app\\S08P31B206\\hangul\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\7\\classes.dex
+path.2=7/classes.dex
+base.1=C\:\\Users\\SSAFY\\Desktop\\hangul-app\\S08P31B206\\hangul\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+path.1=0/classes.dex
+base.0=C\:\\Users\\SSAFY\\Desktop\\hangul-app\\S08P31B206\\hangul\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+path.0=classes.dex
