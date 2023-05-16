@@ -1,29 +1,3 @@
-import {createSlice} from '@reduxjs/toolkit'
-
-const initialState = {
-    text: "ㄱ",
-    wordArray: [],
-    modalIsVisible: false
-}
-
-export const bookSlice = createSlice({
-    name: "bookModal",
-    initialState,
-    reducers: {
-        setWordArray(state, action){
-            // console.log(action.payload)
-            state.wordArray = action.payload
-        },
-        openModal(state, action){
-            state.text = action.payload
-            state.modalIsVisible = true
-        },
-        closeModal(state){
-            state.modalIsVisible = false
-        }
-    }
-})
-
-export const bookModalActions = bookSlice.actions;
-
-export default bookSlice.reducer;
+version https://git-lfs.github.com/spec/v1
+oid sha256:39707ee7ccbb35a81164a251fcc12aac4d53821fa9d9a53812b6b0cecdef2ef4
+size 664
