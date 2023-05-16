@@ -1,26 +1,3 @@
-import Block from './Block'
-
-const BlockSet =() => {
-
-
-    return(
-        <div className="absolute top-[20%] w-[200%] h-[75%] bg-transparent">
-            <Block top={"5%"} left={"5%"} text={"ㄱ"} z={"10"}/>
-            <Block top={"17%"} left={"10%"} text={"ㄴ"} z={"10"}/>
-            <Block top={"30%"} left={"15%"} text={"ㄷ"} z={"10"}/>
-            <Block top={"17%"} left={"20%"} text={"ㄹ"} z={"0"}/>
-            <Block top={"30%"} left={"25%"} text={"ㅁ"} z={"20"}/>
-            <Block top={"17%"} left={"30%"} text={"ㅂ"} z={"10"}/>
-            <Block top={"5%"} left={"35%"} text={"ㅅ"} z={"0"}/>
-            <Block top={"17%"} left={"40%"} text={"ㅇ"} z={"10"}/>
-            <Block top={"5%"} left={"45%"} text={"ㅈ"} z={"0"}/>
-            <Block top={"17%"} left={"50%"} text={"ㅊ"} z={"5"}/>
-            <Block top={"30%"} left={"55%"} text={"ㅋ"} z={"10"}/>
-            <Block top={"42%"} left={"60%"} text={"ㅌ"} z={"20"}/>
-            <Block top={"30%"} left={"65%"} text={"ㅍ"} z={"10"}/>
-            <Block top={"17%"} left={"70%"} text={"ㅎ"} z={"0"}/>
-        </div>
-    )
-}
-
-export default BlockSet;
+version https://git-lfs.github.com/spec/v1
+oid sha256:c070dcaf59a5b78adcb0a79d5ea2bf677b341aab6ef1f1d5902647137ced3d67
+size 1135
