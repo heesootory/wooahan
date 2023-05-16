@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:db815c9dec411637f52541695ae9c3b0b261238459d94feeff8944c877ef1e3f
-size 389
+{
+  "version": 3,
+  "artifactType": {
+    "type": "PACKAGED_MANIFESTS",
+    "kind": "Directory"
+  },
+  "applicationId": "com.penguin.hangul",
+  "variantName": "debug",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 3,
+      "versionName": "3.0",
+      "outputFile": "AndroidManifest.xml"
+    }
+  ],
+  "elementType": "File"
+}

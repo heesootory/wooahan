@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5518082e1a3bfd906f6690ccdadd7f23a2ed92a488912b1c37a206bc9dd44282
-size 68
+<resources>
+    <string name="app_name">우아한</string>
+</resources>

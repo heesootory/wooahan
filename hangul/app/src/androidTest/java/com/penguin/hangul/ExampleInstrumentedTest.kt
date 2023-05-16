@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:463c01b62f577f65a78dc1fdeae4cdf03d64989043138f4d5e37eb7ba9d6ab98
-size 663
+package com.penguin.hangul
+
+import androidx.test.platform.app.InstrumentationRegistry
+import androidx.test.ext.junit.runners.AndroidJUnit4
+
+import org.junit.Test
+import org.junit.runner.RunWith
+
+import org.junit.Assert.*
+
+/**
+ * Instrumented test, which will execute on an Android device.
+ *
+ * See [testing documentation](http://d.android.com/tools/testing).
+ */
+@RunWith(AndroidJUnit4::class)
+class ExampleInstrumentedTest {
+    @Test
+    fun useAppContext() {
+        // Context of the app under test.
+        val appContext = InstrumentationRegistry.getInstrumentation().targetContext
+        assertEquals("com.penguin.hangul", appContext.packageName)
+    }
+}
