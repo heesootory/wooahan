@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d541f453b2758f54f2ecf40dc6bd53d4aef4f718b6a72b44bfa5bfca23cf2cff
-size 672
+import React from "react";
+import { connect } from "react-redux";
+
+export const QuizCard = (props) => {
+  return (
+    <div
+      className="absolute w-64 h-64 -mt-32 -ml-32 border-4 border-mainBlack bg-mainWhite rounded-3xl top-1/2 left-1/2"
+      style={{
+        backgroundImage: `url(${props.image})`,
+        backgroundSize: "16rem 16rem",
+        width: "16rem",
+        backgroundRepeat: "no-repeat",
+      }}
+      onClick={props.changeQuiz}
+    ></div>
+  );
+};
+
+QuizCard.propTypes = {
+  // second: PropTypes.third
+};
+
+const mapStateToProps = (state) => ({});
+
+const mapDispatchToProps = {};
+
+export default connect(mapStateToProps, mapDispatchToProps)(QuizCard);
