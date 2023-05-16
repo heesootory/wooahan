@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:27fe9d3deff3e26f57024c2a1c43b6b1863db6e9d6eb21aeeffa46018de2b484
-size 834
+import { useEffect, useState } from "react";
+
+const usePreloadImages = (imageUrls) => {
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+
+  useEffect(() => {
+    if (!imageUrls || imageUrls.length <= 0) return;
+
+    const preloadImages = async () => {
+      const promises = imageUrls.map((url) => {
+        return new Promise((resolve) => {
+          const img = new Image();
+          img.src = url;
+          img.onload = () => resolve(url);
+          img.onerror = () => resolve(url);
+        });
+      });
+
+      try {
+        await Promise.all(promises);
+        console.log("end guys");
+        setImagesLoaded(true);
+      } catch (error) {
+        console.error("Error preloading images:", error);
+      }
+    };
+
+    preloadImages();
+  }, [imageUrls]);
+
+  return imagesLoaded;
+};
+
+export default usePreloadImages;
