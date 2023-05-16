@@ -1,22 +1,3 @@
-import {createSlice} from "@reduxjs/toolkit";
-
-const initialState = {
-    modalIsVisible: false
-}
-
-export const modalSlice = createSlice({
-    name: "settingModal",
-    initialState,
-    reducers: {
-        openModal(state){
-            state.modalIsVisible = true
-        },
-        closeModal(state){
-            state.modalIsVisible = false
-        }
-    }
-}) 
-
-export const modalActions = modalSlice.actions;
-
-export default modalSlice.reducer;
+version https://git-lfs.github.com/spec/v1
+oid sha256:99d954e70b2f5452834f5f3480a24b7dba5bf817ff3492a369cd8bc057ed15ca
+size 448
