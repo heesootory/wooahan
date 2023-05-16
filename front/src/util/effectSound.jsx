@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:376f6bb8d2b112d6984f8984793b94ca59ec1f66bba555f5eac6ec41b04bd392
-size 300
+import { Howl } from "howler";
+
+export const effectSound = (src, volume = 1) => {
+  let sound;
+  const soundInject = (src) => {
+    sound = new Howl({ src });
+    sound.loop(false);
+    sound.volume(volume);
+    setTimeout(() => {
+      sound.unload();
+    }, 5000);
+  };
+  soundInject(src);
+  return sound;
+};
+
+export default effectSound;
