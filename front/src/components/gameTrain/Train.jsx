@@ -1,36 +1,3 @@
-import PropTypes from "prop-types";
-import React, { useState } from "react";
-import { connect } from "react-redux";
-import TrainLastWord from "./TrainLastWord";
-import TrainWordCard from "./TrainWordCard";
-import { Navigate } from "react-router-dom";
-
-export const Train = (props) => {
-  const [round, setRound] = useState(0);
-  const [end, setEnd] = useState(false);
-  const nextGame = () => {
-    if (round === 2) {
-      setEnd(true);
-      return;
-    }
-    setRound(round + 1);
-  };
-  return (
-    <div className="h-screen">
-      <div className=" h-[13rem]"></div>
-      {!end && <TrainLastWord data={props.data[round].last} />}
-      {!end && <TrainWordCard data={props.data[round]} nextGame={nextGame} />}
-      {end && <Navigate to={`/ending`} />}
-    </div>
-  );
-};
-
-Train.propTypes = {
-  // second: PropTypes.third,
-};
-
-const mapStateToProps = (state) => ({});
-
-const mapDispatchToProps = {};
-
-export default connect(mapStateToProps, mapDispatchToProps)(Train);
+version https://git-lfs.github.com/spec/v1
+oid sha256:64c0f8e7863c93a65fce57d6999ec72cc3428f22bfbb63543e9e4ef96527e12e
+size 1015
