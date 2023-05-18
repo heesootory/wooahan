@@ -1,11 +1,3 @@
-
-const CardTitle = (props) => {
-
-    return (
-        <div className="w-full mt-[5%] font-['MaplestoryOTFBold'] text-5xl text-mainBlack text-stroke-2 text-stroke-mainWhite" >
-           {props.title} 
-        </div>
-    )
-}
-
-export default CardTitle;
+version https://git-lfs.github.com/spec/v1
+oid sha256:3e0ee597814120311c390534166e0261978a0d7e93541d9feb374e34616234eb
+size 250

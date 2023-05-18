@@ -1,13 +1,3 @@
-import React from "react";
-
-const QuizWord = (props) => {
-  return (
-    <div className="absolute z-20 top-[5vh] w-screen flex justify-center">
-      <div className="font-MaplestoryBold bg-beige border-[2px] px-[3vw] rounded-[16px] pt-[1vw] pb-[0.6vw] text-[min(4.5vw,20vh)] tracking-[0.5vw]">
-        {props.word}
-      </div>
-    </div>
-  );
-};
-
-export default QuizWord;
+version https://git-lfs.github.com/spec/v1
+oid sha256:d3c69738c780acfa62294ffa0b8e79aa201e8b04b48f2e60cb5e5c692800fef8
+size 373
