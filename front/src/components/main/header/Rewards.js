@@ -1,25 +1,3 @@
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBookOpenReader } from "@fortawesome/free-solid-svg-icons";
-import { useNavigate } from "react-router-dom";
-
-library.add(faBookOpenReader);
-
-const Reward = () => {
-  const nav = useNavigate();
-
-  return (
-    <div
-      onClick={() => {
-        nav(`/books`);
-      }}
-      className="pl-4 w-1/6 h-full flex justify-start items-center"
-    >
-      <button className="bg-transparent rounded-xl w-1/2 h-4/5 flex items-center justify-center">
-        <FontAwesomeIcon icon={faBookOpenReader} size="2xl" />
-      </button>
-    </div>
-  );
-};
-
-export default Reward;
+version https://git-lfs.github.com/spec/v1
+oid sha256:ca850137eb1d1fce4a38692d1bf5521009a18e22f11523661f6a35ed6232a0b4
+size 892
