@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7cc18558cea3abf278a203d9efbf46b2e46d800491a90d3625b0cf410e6a29bc
-size 250
+package com.wooahan.back.dto.game;
+
+import lombok.Builder;
+import lombok.Getter;
+
+import java.util.List;
+
+@Builder
+@Getter
+public class BubbleResDto {
+    private String answer;
+    private String answerImg;
+    private List<SimpleWordInfo> cards;
+}
