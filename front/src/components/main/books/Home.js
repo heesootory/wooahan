@@ -1,25 +1,3 @@
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHouseChimney } from "@fortawesome/free-solid-svg-icons";
-import { useNavigate } from "react-router-dom";
-
-library.add(faHouseChimney);
-
-const Home = () => {
-  const nav = useNavigate();
-
-  return (
-    <div
-      onClick={() => {
-        nav(`/main`);
-      }}
-      className="pl-4 w-1/6 h-full flex justify-start items-center"
-    >
-      <button className="bg-white rounded-xl w-1/2 h-4/5 flex items-center justify-center">
-        <FontAwesomeIcon icon={faHouseChimney} size="2xl" />
-      </button>
-    </div>
-  );
-};
-
-export default Home;
+version https://git-lfs.github.com/spec/v1
+oid sha256:138b20e770298a31cda8e66be4d5e98a5a2d21d794ef96e5c6ca56bbfa51930b
+size 699
