@@ -1,36 +1,3 @@
-import { createSlice } from "@reduxjs/toolkit"
-
-const initialState = {
-    email: "",
-    socialLogin: false,
-    starCount: 0,
-    rewards: null,
-    name: "",
-}
-
-export const loginSlice = createSlice({
-    name: "loginInfo",
-    initialState,
-    reducers: {
-        getName: (state, action) => {
-            state.name = action.payload;
-        },  
-        successSocialLogin: (state) => {
-            state.socialLogin = true;
-        },
-        getEmail: (state, action) => {
-            state.email = action.payload
-        },
-        getStarCount :(state, action) => {
-            console.log("hey");
-            state.starCount = action.payload
-        },
-        getRewards(state, action){
-            state.rewards = action.payload
-        }
-    }
-})
-
-export const loginActions = loginSlice.actions;
-
-export default loginSlice.reducer;
+version https://git-lfs.github.com/spec/v1
+oid sha256:d203095b526635b7e72fec4b51576cc1978cf4d6e9104b47c8caa1f34c6db3c5
+size 846
