@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:142ac322a9acb9202850dd2c32a7ece61b95da3ecd40860e2f76989c121dbe51
-size 530
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/back" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="azul-11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="jpab" />
+  </component>
+</project>
