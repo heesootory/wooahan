@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:916c2e0f639fc603b39fa4376f8991655f82b22c6b755f9aed9eaa770ef82f1b
-size 297
+package com.wooahan.back.dto;
+
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
+import lombok.Builder;
+import lombok.Getter;
+
+@Builder
+@Getter
+public class TrainResDto {
+    private String last;
+    private SimpleWordInfo word1;
+    private SimpleWordInfo word2;
+    private String ans;
+
+}
