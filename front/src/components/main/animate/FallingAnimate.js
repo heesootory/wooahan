@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ca11414aa1f8b5c90ca09cfdfdc11ce1608c6fe0d1926f8c8c39ab38f9fbc39e
-size 1045
+import image_snowflake from "assets/images/falling/snow.png";
+import image_leaf from "assets/images/falling/leaf.png";
+import image_brownleaf from "assets/images/falling/brownLeaf.png";
+import image_bubble from "assets/images/falling/bubble.png";
+
+const fallingThings = [image_snowflake, image_leaf, image_bubble, image_brownleaf, image_snowflake, image_leaf, image_bubble, image_brownleaf];
+const tmpArray = ["animate-snow1", "animate-snow2", "animate-snow3", "animate-snow4", "animate-snow5", "animate-snow6", "animate-snow7", "animate-snow8",
+"animate-snow9", "animate-snow10", "animate-snow11", "animate-snow12"];
+
+const FallingAnimate = (props) => {
+  return (
+    // 왜 map으로하면 안될까?
+    <div>
+      {
+        tmpArray.map((idx) => {
+          return (
+            <img
+              key={idx}
+              src={fallingThings[props.falling]}
+              className={`absolute z-10 w-[3%] h-[4%] ${idx}`}
+              alt=""
+            />
+          );
+        })
+      }
+    </div>
+  );
+};
+
+export default FallingAnimate;
