@@ -1,17 +1,3 @@
-const Title = () => {
-  return (
-    <div className="w-1/4 h-full flex items-center justify-center pt-2 ">
-      <div className="w-1/3 h-full font-MaplestoryBold text-5xl text-[#FFD600] text-stroke-2 text-stroke-mainBlack">
-        우
-      </div>
-      <div className="w-1/3 h-full font-MaplestoryBold text-5xl text-[#FFD600] text-stroke-2 text-stroke-mainBlack">
-        아
-      </div>
-      <div className="w-1/3 h-full font-MaplestoryBold text-5xl text-[#FFD600] text-stroke-2 text-stroke-mainBlack">
-        한
-      </div>
-    </div>
-  );
-};
-
-export default Title;
+version https://git-lfs.github.com/spec/v1
+oid sha256:e4e9b36f98681d4f542c7f8e0059b39c36b0c98fd14a74c3f93703e696bc00bc
+size 575
