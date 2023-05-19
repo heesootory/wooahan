@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b79f7fb093548e0aa23f2432ec1e8e74988b38a81945a2203c695276bd7f03e3
-size 401
+/**
+ * Automatically generated file. DO NOT MODIFY
+ */
+package com.penguin.hangul;
+
+public final class BuildConfig {
+  public static final boolean DEBUG = Boolean.parseBoolean("true");
+  public static final String APPLICATION_ID = "com.penguin.hangul";
+  public static final String BUILD_TYPE = "debug";
+  public static final int VERSION_CODE = 4;
+  public static final String VERSION_NAME = "1.1";
+}
