@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d0aa79c29b8dd7348e8e79698ec7d8c35cdddab921742a5038055e231baf9e5a
-size 372
+package com.wooahan.back.entity;
+
+import com.wooahan.back.dto.Difficulty;
+import lombok.Getter;
+
+import javax.persistence.*;
+
+@Getter
+@Entity
+public class Word {
+    @Id
+    @Column(name ="word_name")
+    private String name;
+
+    @Column
+    private int initial ;
+
+    @Column(nullable = false, length = 1000)
+    private String imgUrl;
+
+    private int difficulty;
+
+
+
+}

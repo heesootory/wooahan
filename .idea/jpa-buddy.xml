@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:76e8643db41c179f334ba29eb8fcf6f8ed7e0a46c98d5dc6faf312bdb7bf15cd
-size 245
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JpaBuddyIdeaProjectConfig">
+    <option name="defaultUnitInitialized" value="true" />
+    <option name="renamerInitialized" value="true" />
+  </component>
+</project>

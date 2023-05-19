@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:08d46a6f8b38def55fd0ef0d32d043d1a18f88abfa22cc55a8ae2994c228f5dc
-size 554
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/S08P31B206.iml" filepath="$PROJECT_DIR$/.idea/S08P31B206.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/back.main.iml" filepath="$PROJECT_DIR$/.idea/modules/back.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.wooahan.back.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.wooahan.back.main.iml" />
+    </modules>
+  </component>
+</project>

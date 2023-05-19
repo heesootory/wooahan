@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9c7eca6bdbb80ec9332c65809403060002e8caf55f294de7513a9826c928281b
-size 285
+package com.wooahan.back.dto.game;
+
+import com.wooahan.back.service.RunService;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+import java.util.List;
+
+@AllArgsConstructor
+@Getter
+public class RunResDto {
+
+    private String quiz;
+    private List<RunService.RunWord>words;
+}

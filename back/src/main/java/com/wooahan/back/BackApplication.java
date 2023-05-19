@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ae981ec62800330cbdd569831c6b73c9fce47b50d08bdc4274d32448620b27ad
-size 516
+package com.wooahan.back;
+
+import io.swagger.v3.oas.annotations.OpenAPIDefinition;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import java.io.*;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.net.URLEncoder;
+import java.util.Date;
+
+@OpenAPIDefinition
+@SpringBootApplication
+public class BackApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(BackApplication.class, args);
+    }
+}

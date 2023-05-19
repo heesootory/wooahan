@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6a5236a198822266642e94059c4899f926f8006dd47d20e92f0dd7d25643cb5a
-size 287
+package com.wooahan.back.dto.game;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class SimpleWordInfo {
+    private String name;
+    private String imgUrl;
+}

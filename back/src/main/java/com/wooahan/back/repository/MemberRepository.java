@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:95b2ad2de33234e6bdac9ea3779da6c7944a9c93c5c238acce1ef534594bedb2
-size 344
+package com.wooahan.back.repository;
+
+import com.wooahan.back.entity.Member;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.Optional;
+
+public interface MemberRepository extends JpaRepository<Member, Long> {
+    Optional<Member> findByProvider(String provider);
+    Optional<Member> findByEmail(String email);
+}
