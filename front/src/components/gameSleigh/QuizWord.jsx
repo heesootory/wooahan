@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:70ebc63def0d5b7f6e65474c3b6640ea82c2d62596dcb866b408703b8962b44e
-size 430
+import React from "react";
+
+const QuizWord = (props) => {
+  return (
+    <div className="absolute z-20 top-[5vh] w-screen flex box-shadow justify-center">
+      <div className="font-MaplestoryBold bg-[#d9d9d9] bg-opacity-60 px-[3vw] text-shadow-sm shadow-mainBlack text-mainOrange-600 rounded-[16px] pt-[0.4vw] text-[min(6vw,20vh)] tracking-[0.5vw]">
+        {props.word}
+      </div>
+    </div>
+  );
+};
+
+export default QuizWord;
